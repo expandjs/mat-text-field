@@ -1,7 +1,7 @@
 {
   "name": "mat-text-field",
   "license": "BSD-3-Clause",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "This element is used to display a material text field.",
   "homepage": "http://www.expandjs.com/elements/mat-text-field",
   "authors": [
