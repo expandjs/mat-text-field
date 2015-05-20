@@ -12,8 +12,8 @@ This element is used to display a material text field.
 @element mat-text-field
 @description A custom element used to display a Material Design text-field
 @group inputs
-@homepage http://www.expandjs.com/elements/mat-text-field
-@demo http://www.expandjs.com/demo/mat-text-field
+@homepage http://expandjs.com/elements/mat-text-field
+@demo http://expandjs.com/demo/mat-text-field
 
 @dependency polymer Polymer/polymer#^0.5
 @dependency expandjs ExpandJS/expandjs
@@ -62,6 +62,18 @@ This element is used to display a material text field.
 
     <script>
         XPElement({
+
+            /**
+             * Blurs the input.
+             *
+             * @method blur
+             * @returns {Element}
+             */
+            blur: function () {
+                var self = this;
+                self.injected.blur();
+                return self;
+            },
 
             /**
              * Focuses the input.
