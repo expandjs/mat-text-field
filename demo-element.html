@@ -3,49 +3,85 @@
 
 <dom-module id="mat-text-field-demo">
 
-    <style>
-        :host mat-text-field {
-            width: 256px;
-        }
-    </style>
-
     <template>
-        <mat-demo label="mat-text-field">
 
-            <div class="demo-title">Default</div>
+        <mat-demo label="Default">
+            <script type="text/html">
+                <mat-text-field label="Default"></mat-text-field>
+            </script>
             <mat-text-field label="Default"></mat-text-field>
-
-            <div class="demo-title">Disabled</div>
-            <mat-text-field value="Disabled" disabled></mat-text-field>
-
-            <div class="demo-title">Readonly</div>
-            <mat-text-field value="Readonly" floating-label readonly></mat-text-field>
-
-            <div class="demo-title">Floating label</div>
-            <mat-text-field label="Email address" description="I am a description" type="email" floating-label></mat-text-field>
-
-            <div class="demo-title">Validation</div>
-            <mat-text-field label="Numbers only" max-length="10" pattern="[0-9]*" floating-label></mat-text-field>
-
-            <div class="demo-title">Number (step 0.01)</div>
-            <mat-text-field type="number" step="0.01"></mat-text-field>
-
-            <div class="demo-title">Number (fixed 0.01)</div>
-            <mat-text-field type="number" label="0.00" input-prefix="$&nbsp;" step="0.01" fixed></mat-text-field>
-
-            <div class="demo-title">Number (1 to 10)</div>
-            <mat-text-field type="number" label="Rating" min="1" max="10" floating-label></mat-text-field>
-
-            <div class="demo-title">Prefix</div>
-            <mat-text-field label="element-name" format="kebabCase" input-prefix="mat-"></mat-text-field>
-
-            <div class="demo-title">Suffix</div>
-            <mat-text-field label="username" format="lowerCase" input-suffix="@example.com" pattern="[0-9a-z]*" deburr></mat-text-field>
-
-            <div class="demo-title">Full Width</div>
-            <mat-text-field label="Full width" max-length="120" full-width></mat-text-field>
-
         </mat-demo>
+
+        <mat-demo label="Disabled">
+            <script type="text/html">
+                <mat-text-field value="Disabled" disabled></mat-text-field>
+            </script>
+            <mat-text-field value="Disabled" disabled></mat-text-field>
+        </mat-demo>
+
+        <mat-demo label="Readonly">
+            <script type="text/html">
+                <mat-text-field value="Readonly" floating-label readonly></mat-text-field>
+            </script>
+            <mat-text-field value="Readonly" floating-label readonly></mat-text-field>
+        </mat-demo>
+
+        <mat-demo label="Floating label">
+            <script type="text/html">
+                <mat-text-field label="Email address" description="I am a description" type="email" floating-label></mat-text-field>
+            </script>
+            <mat-text-field label="Email address" description="I am a description" type="email" floating-label></mat-text-field>
+        </mat-demo>
+
+        <mat-demo label="Validation">
+            <script type="text/html">
+                <mat-text-field label="Numbers only" max-length="10" pattern="[0-9]*" floating-label></mat-text-field>
+            </script>
+            <mat-text-field label="Numbers only" max-length="10" pattern="[0-9]*" floating-label></mat-text-field>
+        </mat-demo>
+
+        <mat-demo label="Number (step 0.01)">
+            <script type="text/html">
+                <mat-text-field type="number" step="0.01"></mat-text-field>
+            </script>
+            <mat-text-field type="number" step="0.01"></mat-text-field>
+        </mat-demo>
+
+        <mat-demo label="Number (fixed 0.01)">
+            <script type="text/html">
+                <mat-text-field type="number" label="0.00" input-prefix="$&nbsp;" step="0.01" fixed></mat-text-field>
+            </script>
+            <mat-text-field type="number" label="0.00" input-prefix="$&nbsp;" step="0.01" fixed></mat-text-field>
+        </mat-demo>
+
+        <mat-demo label="Number (1 to 10)">
+            <script type="text/html">
+                <mat-text-field type="number" label="Rating" min="1" max="10" floating-label></mat-text-field>
+            </script>
+            <mat-text-field type="number" label="Rating" min="1" max="10" floating-label></mat-text-field>
+        </mat-demo>
+
+        <mat-demo label="Prefix">
+            <script type="text/html">
+                <mat-text-field label="element-name" format="kebabCase" input-prefix="mat-"></mat-text-field>
+            </script>
+            <mat-text-field label="element-name" format="kebabCase" input-prefix="mat-"></mat-text-field>
+        </mat-demo>
+
+        <mat-demo label="Suffix">
+            <script type="text/html">
+                <mat-text-field label="username" format="lowerCase" input-suffix="@test.com" pattern="[0-9a-z]*" deburr></mat-text-field>
+            </script>
+            <mat-text-field label="username" format="lowerCase" input-suffix="@test.com" pattern="[0-9a-z]*" deburr></mat-text-field>
+        </mat-demo>
+
+        <mat-demo label="Full width" padding-disabled>
+            <script type="text/html">
+                <mat-text-field label="Full width" max-length="120" full-width></mat-text-field>
+            </script>
+            <mat-text-field label="Full width" max-length="120" full-width></mat-text-field>
+        </mat-demo>
+
     </template>
 
     <script>
