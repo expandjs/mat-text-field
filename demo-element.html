@@ -12,6 +12,13 @@
             <mat-text-field label="Default"></mat-text-field>
         </mat-demo>
 
+        <mat-demo label="Binding and default value">
+            <script type="text/html">
+                <mat-text-field label="Default" model="{{myTextField}}" value="Hello world"></mat-text-field>
+            </script>
+            <mat-text-field label="Default" model="{{myTextField}}" value="Hello world"></mat-text-field>
+        </mat-demo>
+
         <mat-demo label="Disabled">
             <script type="text/html">
                 <mat-text-field value="Disabled" disabled></mat-text-field>
