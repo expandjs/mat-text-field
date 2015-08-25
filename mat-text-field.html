@@ -182,6 +182,20 @@ Generally, we recommend to use the `model` for data binding and `value` to set t
             /*********************************************************************/
 
             /**
+             * Set the adaptee.
+             *
+             * @method _adapt
+             * @returns {Element}
+             * @private
+             */
+            _adapt: function () {
+                var self = this;
+                self._setAdaptee(XP.appendChild(Polymer.dom(self), XP.createElement('input', {attributes: {type: self.type, value: self.value}})));
+                self.listen(self.adaptee, 'input', '_handleInput');
+                return self;
+            },
+
+            /**
              * Reflects adapted input's `value` onto the element.
              *
              * @method _commitFrom
@@ -218,20 +232,6 @@ Generally, we recommend to use the `model` for data binding and `value` to set t
             _index: function (value) {
                 var self = this;
                 self.adaptee.tabIndex = value;
-                return self;
-            },
-
-            /**
-             * Set the adaptee.
-             *
-             * @method _adapt
-             * @returns {Element}
-             * @private
-             */
-            _adapt: function () {
-                var self = this;
-                self._setAdaptee(XP.appendChild(Polymer.dom(self), XP.createElement('input', {attributes: {type: self.type, value: self.value}})));
-                self.listen(self.adaptee, 'input', '_handleInput');
                 return self;
             },
 
