@@ -1,3 +1,3 @@
 # mat-text-field
 
-See the [`documentation page`](http://expandjs.com/elements/mat-text-field) for more information.
+This repository has been merged into [`mat-elements`](https://github.com/expandjs/max-elements).
